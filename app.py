@@ -15,7 +15,7 @@ def connectDB_getRandomQuestions(questionsCount):
 
         connection = mysql.connector.connect(
             host='localhost',
-            database='cs_practice',
+            database='db',
             user='user',
             password='password'
         )
@@ -83,9 +83,9 @@ def connectDB_getAllQuestions():
 
         connection = mysql.connector.connect(
             host='localhost',
-            database='cs_practice',
-            user='dw',
-            password='Wang61224!'
+            database='db',
+            user='user',
+            password='db'
         )
 
         if connection.is_connected():
